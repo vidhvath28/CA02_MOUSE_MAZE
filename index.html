@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mousemaze-home.css" />
+    <script type="text/javascript" src="home.js"></script>
+    <title>Mouse Maze</title>
+</head>
+<body>
+    <div id="sound"></div>
+    <div id="home">
+        <h1>Mouse Maze</h1>
+        <h3>Made by Vidhvath J</h3>
+        <div id="presentation">
+            <div class="login-container">
+                <h1>Welcome!</h1>
+                <form id="login-form" onsubmit="startGame(); return false;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="nickname">Nickname:</label>
+                    <input type="text" id="nickname" name="nickname" required>
+
+                    <input type="submit" value="START GAME">
+                </form>
+            </div>
+        </div>
+        <div class="help-button"><a href="help.html">- help -</a></div>
+        <a class="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>
+        <a class="github" target="_blank" href="https://github.com/vidhvath28"><img src="img/github.png" alt=""></a>
+    </div>
+    <audio id="background-music" autoplay loop>
+        <source src="sound/baby-game-mane-without-laughter-8779.mp3" type="audio/mp3">
+    </audio>
+   
+    <script>
+        function startGame() {
+            var name = document.getElementById("name").value;
+            var nickname = document.getElementById("nickname").value;
+
+            if (name !== "" && nickname !== "") {
+                window.location.href = "game.index.html";
+            } else {
+                alert("Please fill in both name and nickname to start the game.");
+            }
+        }
+
+        const backgroundMusic = document.getElementById('background-music');
+        const playMusicButton = document.getElementById('playMusicButton');
+        const pauseMusicButton = document.getElementById('pauseMusicButton');
+
+        playMusicButton.addEventListener('click', () => {
+            backgroundMusic.play();
+        });
+
+        pauseMusicButton.addEventListener('click', () => {
+            backgroundMusic.pause();
+        });
+    </script>
+</body>
+</html>

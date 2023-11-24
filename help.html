@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+
+<h1>INSTRUCTIONS</h1>
+
+<p>   
+* When starting a game,  (red ghost) must move first so the other ghosts can leave the ghost cage and enter the maze. So, if Blinky is not the first ghost to move on the first card drawn, then the ghosts that appear before him lose their turn since they cannot move out of the cage.
+
+Ghosts cannot move through other ghost pawns. <Br></Br>
+
+ * If a ghost cannot move the total of their assigned movement, they move as far as they can, and then their turn ends.
+
+When a Ghost Eyes Token enters the ghost cage, that ghost's movement immediately ends, and their turn is over.  <br> <br>
+ * The Ghost Eyes Token is replaced by the ghost pawn and then waits in the ghost cage until the next turn.
+
+The TUNNEL connects the left and right sides of the game board. When a player moves their pawn through the TUNNEL, the pawn continues its movement on the other side of the board
+</p>
+
+
+<audio id="background-music" autoplay loop>
+    <source src="sound/children-logo-116101.mp3" type="audio/mp3">
+</audio>
+
+<script>
+      // Music control functionality
+      const backgroundMusic = document.getElementById('background-music');
+        const playMusicButton = document.getElementById('playMusicButton');
+        const pauseMusicButton = document.getElementById('pauseMusicButton');
+
+        playMusicButton.addEventListener('click', () => {
+            backgroundMusic.play();
+        });
+
+        pauseMusicButton.addEventListener('click', () => {
+            backgroundMusic.pause();
+        });
+</script>
+
+    
+</body>
+</html>

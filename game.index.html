@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mouse_Maze</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1>Mouse Maze</h1>
+    <div class="grid"></div>
+    <h3 id="greeting">Hi, Your  <span id="nicknameDisplay"></span>! Score: <span id="score"></span></h3>
+    <button id="pauseButton">Pause</button>
+    <a href="index.html">
+      <button id="quitButton">Quit</button>
+    </a>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+    <audio id="background-music" autoplay loop>
+      <source src="sound/vodevil-15550.mp3" type="audio/mp3">
+    </audio>
+    <script>
+     
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+      const nickname = getParameterByName('nickname') || 'Guest';
+
+      
+      const nicknameDisplay = document.getElementById("nickname");
+      nicknameDisplay.innerHTML = nickname;
+
+        const backgroundMusic = document.getElementById('background-music');
+        const playMusicButton = document.getElementById('playMusicButton');
+        const pauseMusicButton = document.getElementById('pauseMusicButton');
+
+        playMusicButton.addEventListener('click', () => {
+            backgroundMusic.play();
+        });
+
+        pauseMusicButton.addEventListener('click', () => {
+            backgroundMusic.pause();
+        });
+    </script>
+  </body>
+</html>
