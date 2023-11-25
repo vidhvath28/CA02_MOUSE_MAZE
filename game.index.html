@@ -26,6 +26,9 @@
     <audio id="background-music" autoplay loop>
         <source src="sound/vodevil-15550.mp3" type="audio/mp3">
     </audio>
+    <button id="playMusicButton">Play Music</button>
+     <button id="pauseMusicButton">Pause Music</button>
+
     <body>
        
         <div id="arrowButtons">
@@ -36,5 +39,19 @@
         </div>
     </body> 
 </body>
+<script>
+    const backgroundMusic = document.getElementById('background-music');
+    const playMusicButton = document.getElementById('playMusicButton');
+    const pauseMusicButton = document.getElementById('pauseMusicButton');
+
+    playMusicButton.addEventListener('click', () => {
+        backgroundMusic.play();
+    });
+
+    pauseMusicButton.addEventListener('click', () => {
+        backgroundMusic.pause();
+    });
+</script>
+
 
 </html>
