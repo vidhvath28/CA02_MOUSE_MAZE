@@ -3,10 +3,7 @@ body{
     content: cover;
     margin: 50px;
     padding: 50px;
-    /* overflow: hidden; */
 }
-
-
 .arrow-btn {
   font-size: 16px;
   margin: 5px;
@@ -178,11 +175,7 @@ h1 {
   color: #FFD700; 
   text-decoration: none;
   cursor: pointer;
-}
-
-
-
-  
+} 
 @media only screen and (max-width: 600px) {
   
   .grid div {
@@ -215,7 +208,6 @@ h1 {
   }
 }
   }
-  /* Default styling for arrow buttons */
 #arrowButtons {
   display: flex;
   justify-content: space-around;
@@ -225,8 +217,6 @@ h1 {
 #arrowButtons button {
   font-size: 24px;
 }
-
-/* Media query for mobile responsiveness */
 @media only screen and (max-width: 600px) {
   #arrowButtons {
     flex-direction: column;
