@@ -290,4 +290,59 @@ window.onclick = function (event) {
 
   modal.style.display = "block";
 }
+document.addEventListener('DOMContentLoaded', () => {
+  const scoreDisplay = document.getElementById('score');
+  const width = 28;
+  let score = 0;
+  const grid = document.querySelector('.grid');
+  const layout = []; // Populate your layout array here
+  const squares = [];
+  let mouseindex = 490;
 
+  // ... Other functions and game logic ...
+
+  function handleArrowButtonClick(event) {
+    switch (event.target.id) {
+      case 'upButton':
+        simulateKeyPress(38); // 38 corresponds to the 'up' arrow key
+        break;
+      case 'leftButton':
+        simulateKeyPress(37); // 37 corresponds to the 'left' arrow key
+        break;
+      case 'downButton':
+        simulateKeyPress(40); // 40 corresponds to the 'down' arrow key
+        break;
+      case 'rightButton':
+        simulateKeyPress(39); // 39 corresponds to the 'right' arrow key
+        break;
+    }
+  }
+
+  // Attach click event listeners to arrow buttons
+  document.getElementById('upButton').addEventListener('click', handleArrowButtonClick);
+  document.getElementById('leftButton').addEventListener('click', handleArrowButtonClick);
+  document.getElementById('downButton').addEventListener('click', handleArrowButtonClick);
+  document.getElementById('rightButton').addEventListener('click', handleArrowButtonClick);
+
+  // ... Rest of your code ...
+
+  function simulateKeyPress(keyCode) {
+    const event = new KeyboardEvent('keyup', { keyCode });
+    document.dispatchEvent(event);
+  }
+
+  // ... Rest of your code ...
+});
+// Add this code to your existing JavaScript
+
+// Function to handle touch events on arrow buttons
+function handleArrowButtonTouch(event) {
+  event.preventDefault(); // Prevent default touch behavior
+  handleArrowButtonClick(event); // Call the existing button click handler
+}
+
+// Attach touch event listeners to arrow buttons
+document.getElementById('upButton').addEventListener('touchstart', handleArrowButtonTouch);
+document.getElementById('leftButton').addEventListener('touchstart', handleArrowButtonTouch);
+document.getElementById('downButton').addEventListener('touchstart', handleArrowButtonTouch);
+document.getElementById('rightButton').addEventListener('touchstart', handleArrowButtonTouch);
