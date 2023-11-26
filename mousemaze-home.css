@@ -8,13 +8,11 @@ body {
     overflow: hidden;
     background-image: url("https://th.bing.com/th/id/OIP.uApf9ONyi3WHq-RNg324PgHaHa?w=794&h=794&rs=1&pid=ImgDetMain");
 }
-
 #home {
     text-align: center;
     margin: 20vh auto;
     max-width: 600px;
 }
-
 h1 {
     font-size: 3em;
     margin-bottom: 0.2em;
@@ -22,13 +20,11 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     animation: fadeInUp 1s ease-out;
 }
-
 h3 {
     font-size: 1.5em;
     margin-top: 0;
     color: #ddd;
 }
-
 .linker,
 .help-button {
     background-color: #4caf50;
@@ -41,13 +37,11 @@ h3 {
     display: inline-block;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .linker:hover,
 .help-button:hover {
     background-color: #45a049;
     transform: scale(1.1);
 }
-
 .sound,
 .sound:hover {
     position: absolute;
@@ -58,15 +52,12 @@ h3 {
     color: #fff;
     transition: opacity 0.3s ease;
 }
-
 .sound img {
     width: 30px;
 }
-
 .sound:hover {
     opacity: 0.8;
 }
-
 .help-button {
     background-color: #4285f4;
     color: #fff;
@@ -77,12 +68,10 @@ h3 {
     margin-top: 20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .help-button:hover {
     background-color: #3367d6;
     transform: scale(1.1);
 }
-
 .login-container {
     background-color: #fff;
     border-radius: 8px;
@@ -91,20 +80,17 @@ h3 {
     text-align: center;
     animation: fadeIn 1s ease-out;
 }
-
 form {
     display: flex;
     flex-direction: column;
     max-width: 300px;
     margin: 0 auto;
 }
-
 label {
     margin-top: 10px;
     font-weight: bold;
     color: #303030;
 }
-
 input {
     padding: 10px;
     margin-top: 5px;
@@ -113,11 +99,9 @@ input {
     border-radius: 4px;
     transition: border-color 0.3s ease;
 }
-
 input:focus {
     border-color: #4caf50;
 }
-
 button {
     background-color: #4caf50;
     color: #fff;
@@ -128,12 +112,10 @@ button {
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 button:hover {
     background-color: #45a049;
     transform: scale(1.1);
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -142,7 +124,6 @@ button:hover {
         opacity: 1;
     }
 }
-
 @keyframes fadeInUp {
     from {
         transform: translateY(20px);
@@ -153,32 +134,26 @@ button:hover {
         opacity: 1;
     }
 }
-
 body {
     background-image: url("https://th.bing.com/th/id/OIP.uApf9ONyi3WHq-RNg324PgHaHa?w=794&h=794&rs=1&pid=ImgDetMain");
     background-size: cover;
     background-position: center;
     animation: fadeInBackground 2s ease-out;
 }
-
 #home {
     animation: fadeInUp 1s ease-out, parallax 15s infinite linear;
 }
-
 .linker,
 .help-button {
     animation: fadeIn 1s ease-out;
 }
-
 .linker:hover,
 .help-button:hover {
     animation: pulse 0.5s ease-out infinite;
 }
-
 .button-click {
     animation: pulse 0.5s ease-out;
 }
-
 @keyframes fadeInBackground {
     from {
         opacity: 0;
@@ -187,7 +162,6 @@ body {
         opacity: 1;
     }
 }
-
 @keyframes parallax {
     from {
         background-position: center top;
@@ -196,7 +170,6 @@ body {
         background-position: center bottom;
     }
 }
-
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -208,7 +181,6 @@ body {
         transform: scale(1);
     }
 }
-
 input[type="submit"] {
     background-color: #FFD700;
     color: #303030;
@@ -219,40 +191,32 @@ input[type="submit"] {
     font-size: 1.5em;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 input[type="submit"]:hover {
     background-color: #FFC100;
     transform: scale(1.1);
 }
-
 @media screen and (max-width: 768px) {
     #home {
         margin: 10vh auto;
         max-width: 80%;
     }
-
     h1 {
         font-size: 2.5em;
     }
-
     h3 {
         font-size: 1.2em;
     }
-
     .linker,
     .help-button {
         font-size: 1.2em;
         padding: 15px 30px;
     }
-
     .sound img {
         width: 25px;
     }
-
     .login-container {
         padding: 15px;
     }
-
     input[type="submit"] {
         padding: 12px 16px;
         font-size: 1.3em;

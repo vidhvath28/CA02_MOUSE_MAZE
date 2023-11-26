@@ -28,15 +28,36 @@
         </div>
         <div class="help-button"><a href="help.html">- help -</a></div>
         <a class="sound" href="javascript:void(0);" data-sound="on"><img src="img/sound-on.png" alt="" border="0"></a>
-        <a class="github" target="_blank" href="https://github.com/vidhvath28"><img src="img/github.png" alt=""></a>
+        <a class="github" target="_blank" href="https://github.com/vidhvath28/CA02_MOUSE_MAZE"><img src="img/github.png" alt=""></a>
     </div>
     <audio id="background-music" autoplay loop>
         <source src="sound/baby-game-mane-without-laughter-8779.mp3" type="audio/mp3">
     </audio>
     <button id="playMusicButton">Play Music</button>
-<button id="pauseMusicButton">Pause Music</button>
-
-   
+    <button id="pauseMusicButton">Pause Music</button>
+    <style>
+     #playMusicButton,
+     #pauseMusicButton {
+    background-color: darkcyan; 
+    border: none;
+    color: white; 
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+#playMusicButton:hover,
+#pauseMusicButton:hover {
+    background-color: pink;
+}
+#playMusicButton {
+    margin-right: 10px; 
+}
+</style>
     <script>
         function startGame() {
             var name = document.getElementById("name").value;
@@ -48,18 +69,15 @@
                 alert("Please fill in both name and nickname to start the game.");
             }
         }
-
         const backgroundMusic = document.getElementById('background-music');
-        const playMusicButton = document.getElementById('playMusicButton');
-        const pauseMusicButton = document.getElementById('pauseMusicButton');
-
-        playMusicButton.addEventListener('click', () => {
-            backgroundMusic.play();
-        });
-
-        pauseMusicButton.addEventListener('click', () => {
-            backgroundMusic.pause();
-        });
+    const playMusicButton = document.getElementById('playMusicButton');
+    const pauseMusicButton = document.getElementById('pauseMusicButton');
+    playMusicButton.addEventListener('click', () => {
+        backgroundMusic.play();
+    });
+    pauseMusicButton.addEventListener('click', () => {
+        backgroundMusic.pause();
+    });
     </script>
 </body>
 </html>

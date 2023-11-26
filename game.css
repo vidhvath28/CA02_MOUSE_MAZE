@@ -20,21 +20,17 @@ body{
   border: solid black;
   margin: auto;
 }
- 
-.grid div {
+ .grid div {
     width: 20px;
     height: 20px;
 }
-
 h1 {
   color: #333;
   text-shadow: 2px 2px 4px #aaa;
   margin-top: 50px;
   margin-left: 50%;
   animation: scaleAnimation 2s infinite alternate; 
-
 }
-
 @keyframes scaleAnimation {
   from {
     transform: scale(1);
@@ -43,7 +39,6 @@ h1 {
     transform: scale(1.2);
   }
 }
-
 .score-container {
   position: fixed;
   bottom: 20px;
@@ -52,21 +47,18 @@ h1 {
   text-align: center;
   width: 100%;
   color: white;
-}
-   
+} 
   h3 {
     color: white;
     font-size: 35px;
     margin: auto;
-  }
-  
+  } 
   #score {
     font-weight: bold;
     color: yellow;
     font-size: 28px;
 }
-
-  .button-container {
+ .button-container {
     position: fixed;
     bottom: 20px;
     left: 500px;
@@ -76,7 +68,6 @@ h1 {
     width: 200px; 
     background-color: red;
   }
-
   button {
     padding: 10px 20px;
     margin: 10px;
@@ -85,61 +76,45 @@ h1 {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
   }
-  
   button:hover {
     background-color: #45a049;
   }
-  
-
 .pac-dot {
-    background-color: green;   
-    
+    background-color: green;     
     box-sizing: border-box;
 }
-
 .wall {
     background-color: black;
 }
-
 .power-pellet {
     background-image: url("");
     border-radius: 10px;
 }
-
 .blinky {
     background-image: url("img/cat.png");
      border-radius: 10px;
 }
-
 .pinky {
   background-image: url("img/cat.png");
   border-radius: 10px;
 }
-
 .inky {
   background-image: url("img/cat.png");
   border-radius: 10px;
 }
-
 .clyde {
   background-image: url("img/cat.png");
   border-radius: 10px;
 }
-
-.man {
-   
+.man {  
     background-image: url("img/github.png");
     border-radius: 10px;
 }
-
 .scared-ghost {
     background-color: aquamarine;
 }
-
-
 .modal {
     display: none;
     position: fixed;
@@ -152,7 +127,6 @@ h1 {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
   }
-  
   .modal-content {
   background-color: #663399; 
   margin: 15% auto;
@@ -161,48 +135,39 @@ h1 {
   width: 80%;
   border-radius: 40px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-
-.close {
+ .close {
   color: #fff; 
   float: right;
   font-size: 24px;
   font-weight: bold;
   transition: color 0.3s ease-in-out; 
 }
-
 .close:hover,
 .close:focus {
-  color: #FFD700; 
+  color: #131002; 
   text-decoration: none;
   cursor: pointer;
 } 
 @media only screen and (max-width: 600px) {
-  
   .grid div {
       width: calc(33.33% - 4px); 
   }
-
   h1 {
       font-size: 1.5em; 
       margin-top: 20px; 
   }
-
   .score-container {
       font-size: 12px; 
   }
-
   h3 {
       font-size: 16px; 
   }
-
   #score {
       font-size: 14px; 
   }
-
   .button-container {
       width: 90%; 
   }
-
   button {
       font-size: 14px; 
   }
@@ -213,7 +178,6 @@ h1 {
   justify-content: space-around;
   margin-top: 20px;
 }
-
 #arrowButtons button {
   font-size: 24px;
 }
@@ -222,7 +186,6 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
-
   #arrowButtons button {
     margin: 5px;
   }

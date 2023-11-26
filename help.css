@@ -14,7 +14,6 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease; 
 }
-
 p:hover {
     background-color: rgba(255, 255, 255, 1); 
     transform: scale(1.05); 
@@ -26,8 +25,29 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 h1:hover {
     color: #ff5733; 
     transform: rotate(5deg);
 }
+#playMusicButton,
+#pauseMusicButton {
+background-color: darkcyan; 
+border: none;
+color: white; 
+padding: 15px 32px; 
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 8px;
+}
+#playMusicButton:hover,
+#pauseMusicButton:hover {
+background-color: pink;
+}
+#playMusicButton {
+margin-right: 10px; 
+}
+
